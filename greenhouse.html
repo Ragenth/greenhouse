@@ -1,0 +1,45 @@
+<html lang='en'><head><meta http-equiv='refresh' content='60' name='viewport' content='width=device-width, initial-scale=1'/>
+   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'><script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script><script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+   <title>Green House</title></head><body>
+     <div class='row'>
+      <div class='col-md-12'>
+         <div class='btn-group'>
+           <div class ='container'>
+         <h1>IOT Based Green House Monitoring System</h1>
+         <h3> Mode selection</h3>
+<a href=\"dev1=1\" button type="button" class="btn btn-success">Automatic</button></a>
+  <a href=\"dev1=0\" button type="button" class="btn btn-primary">Manual</button></a>
+           <h3></h3>
+           </li>
+        </ul>
+         <table class='table table-bordered'>
+           <thead><tr class='active'><th>Mode</th><th>" + param1 + "</th>
+           <tbody>
+             <tr><td>Temperature</td><td>" + param2 + "&deg;C</td>
+             <tr class='active'><td>Humidity</td><td>" + param3 + " %</td>
+             <tr><td>Moisture</td><td>" + param5 + " %</td>
+               <tr class='active'><td>Light</td><td>" + param4 + " %</td>
+         </tbody></table>
+         <h3>Manual control</h3>
+         <div class='row'>
+           <div class='col-md-4'><h4 class ='text-left'>FAN
+             <span class='badge'>
+             control
+           </span></h4></div>
+           <div class='col-md-4'><form action=\"dev2=1\" method='POST'><button type='button submit' class='btn btn-success btn-lg'>ON</button></form></div>
+           <div class='col-md-4'><form action=\"dev2=0\" method='POST'><button type='button submit' class='btn btn-danger btn-lg'>OFF</button></form></div>
+           <div class='col-md-4'><h4 class ='text-left'>PUMP
+             <span class='badge'>
+             control
+           </span></h4></div>
+           <div class='col-md-4'><form action=\"dev3=1\" method='POST'><button type='button submit' class='btn btn-success btn-lg'>ON</button></form></div>
+           <div class='col-md-4'><form action=\"dev3=0\" method='POST'><button type='button submit' class='btn btn-danger btn-lg'>OFF</button></form></div>
+           <div class='col-md-4'><h4 class ='text-left'>LAMB
+             <span class='badge'>
+             control
+           </span></h4></div>
+           <div class='col-md-4'><form action=\"dev4=1\" method='POST'><button type='button submit' class='btn btn-success btn-lg'>ON</button></form></div>
+           <div class='col-md-4'><form action=\"dev4=0\" method='POST'><button type='button submit' name='D7' value='0' class='btn btn-danger btn-lg'>OFF</button></form></div>
+         </div>
+   </div></div></div></div>
+   </body></html>
